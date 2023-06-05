@@ -2,7 +2,9 @@ package me.inflearn.springcorereviewall.discount;
 
 import me.inflearn.springcorereviewall.member.Grade;
 import me.inflearn.springcorereviewall.member.Member;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FixDiscountPolicy implements DiscountPolicy{
     private int discountFixAmount = 1000;
     @Override
